@@ -1,1 +1,32 @@
-something
+<!DOCTYPE HTML>
+<html lang="pl">
+  <head>
+    <title>IDKWII v. alpha 0.3.5</title>
+    <meta charset="utf-8"/>
+    <link href="everything/css/main.css" media="all" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="everything/js/interface.js"></script>
+    <script type="text/javascript" src="everything/js/input.js"></script>
+    <script type="text/javascript" src="everything/js/blocks.js"></script>
+    <script type="text/javascript" src="everything/js/interpreter.js"></script>
+  </head>
+  <body>
+    <div id="buttons">
+      <input id="begin_button" type="button" value="beg" onclick="begin_block()"></input>
+      <input id="variable_button" type="button" value="var" onclick="variable_block()"></input>
+      <input id="match_button" type="button" value="mat" onclick="match_block()"></input>
+      <input id="if_button" type="button" value="if" onclick="if_block()"></input>
+      <input id="input_button" type="button" value="inp" onclick="input_block()"></input>
+      <input id="output_button" type="button" value="out" onclick="output_block()"></input>
+      <input id="end_button" type="button" value="end" onclick="end_block()"></input>
+      <input id="run" type="button" value="run" onclick="interpreter()"></input>
+    </div>
+    <canvas id="canvas" onclick="clicked(event)"></canvas>
+    <div id="work_box">
+      <div id="params"></div>
+      <div id="result"></div>
+      <input id="input" type="text" placeholder="input"></input>
+      <input id="submit" type="submit" value="Enter">
+    </div>
+    <script type="text/javascript" src="everything/js/render.js"></script>
+  </body>
+</html>
